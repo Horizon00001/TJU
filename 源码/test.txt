@@ -1,0 +1,6 @@
+pyinstaller --onefile --windowed --add-data "天津大学2024级学号姓名.txt;QT_UI" 
+--add-data "查询模版.ui;QT_UI" 查询.py
+
+pyinstaller --windowed --add-data "天津大学2024级学号姓名.txt;QT_UI" --add-data "查询模版.ui;QT_UI" 查询.py
+
+pyside6-uic 查询模版.ui > 查询模版.py
