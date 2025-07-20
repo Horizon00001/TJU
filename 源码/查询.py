@@ -34,7 +34,7 @@ class Statics:
     def handle_search(self):
         info = self.ui.text.toPlainText()
         if len(info) == 0:
-            QMessageBox.about(self.ui,'查询结果','请重新输入')
+            QMessageBox.warning(self.ui,'提示','请输入内容')
             return
         QMessageBox.about(self.ui,'查询结果', f'查询结果：{self.NameAndId[info]}')
 
